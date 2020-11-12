@@ -21,7 +21,8 @@ public class GetAllContactNames {
         List<String> actualNames = phoneBook.getAllContactNames();
 
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        Assert.assertTrue(actualNames.containsAll(Arrays.asList(names)));
+        Assert.assertEquals(Arrays.asList(names).size(), actualNames.size());
     }
 
     @Test
@@ -38,7 +39,8 @@ public class GetAllContactNames {
         List<String> actualNames = phoneBook.getAllContactNames();
 
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        Assert.assertTrue(actualNames.containsAll(Arrays.asList(names)));
+        Assert.assertEquals(Arrays.asList(names).size(), actualNames.size());
     }
 
     @Test
@@ -55,6 +57,7 @@ public class GetAllContactNames {
         List<String> actualNames = phoneBook.getAllContactNames();
 
         // then
-        Assert.assertEquals(Arrays.asList(names), actualNames);
+        Assert.assertTrue(actualNames.containsAll(Arrays.asList(names)));
+        Assert.assertEquals(Arrays.asList(names).size(), actualNames.size());
     }
 }
